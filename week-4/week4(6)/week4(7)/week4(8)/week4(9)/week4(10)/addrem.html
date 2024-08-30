@@ -1,0 +1,15 @@
+<button id="myButton">Click me</button>
+<div id="myDiv">This is the div</div>
+
+<script>
+  let button = document.getElementById("myButton");
+  let div = document.getElementById("myDiv");
+
+  button.addEventListener("click", function() {
+    if (div.classList.contains("myClass")) {
+      div.classList.remove("myClass");
+    } else {
+      div.classList.add("myClass");
+    }
+  });
+</script>
